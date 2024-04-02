@@ -1,9 +1,12 @@
 
 .minha-div {
-    width: 48%;
-    height: 600px;
+    width: 50%;
+    height: 650px;
     background-color: red;
     font-family: 'Sedgwick Ave', cursive;
+    margin: 0%;
+    padding: 0;
+    
 }
 
 h2 {
@@ -18,6 +21,8 @@ h1 {
 .segunda-div {
     width: 48%;
     height: 600px;
+    
+    
 }
 
 div {
@@ -31,14 +36,17 @@ div {
     width: 100%;
     height: 35%;
     border-collapse: collapse;
-    margin: 20px 10px 0px 10px;/*up/left/down/right*/
+    margin: 20px 10px 0px 10px;
 }
 #tabela{
     width: 95%;
     height:100%;
     font-size: 1.7em;
     border-spacing: 2px;
+   
+    
 }
+
 
 
   
