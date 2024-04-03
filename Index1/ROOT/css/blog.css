@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(218, 211, 211);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.header {
+
+    background-color: blueviolet;
+    padding: 25px;
+    text-align: center;
+
+
+}
+
+.branco {
+    color: aliceblue;
+}
+
+.menu,
+.logo {
+    padding: 12px;
+}
+
+.menu a,
+.menu a:visited {
+    color: white;
+    text-decoration: none;
+    padding: 8px, 12px;
+}
+
+
+.menu a:hover {
+    background-color: red;
+    color: aliceblue;
+
+}
+
+.container {
+    width: 920px;
+    margin: 0 auto;
+    padding: 20px;
+
+    
+
+
+}
+
+.posts {
+    width: 660px;
+    float: left;
+}
+
+.barra-lateral {
+    width: 240px;
+    background-color: red;
+    float: right;
+
+}
+
+.post {
+    padding: 20px;
+    background-color: white;
+    margin-bottom: 25px;
+
+
+}
+
+.post2 {
+    padding: 20px;
+    background-color: white;
+    margin-bottom: 25px;
+
+
+}
+
+.post h2 {
+    margin: 20px;
+    
+}
+
+.post2 h2 {
+    margin: 20px;
+    
+}
+
+.post,
+a {
+
+    text-align: center;
+
+}
+
+.post2,
+a {
+
+    text-align: center;
+
+}
+
+.post p {
+    margin: 10px;
+
+}
+
+.post2 p {
+    margin: 10px;
+
+}
+
+
+.post a {
+    
+    color: chocolate;
+    text-decoration: none;
+    font-weight: bold;
+
+}
+
+.post2 a {
+    color: gray;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer {
+   clear: both; 
+   background-color: blueviolet;
+   padding: 15px;
+}
+
+.footer p {
+     color:white;
+     text-align: center;
+     
+}
