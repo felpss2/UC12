@@ -127,6 +127,35 @@ a {
     font-weight: bold;
 }
 
+.post3 {
+    padding: 30px;
+    background-color: white;
+    margin-bottom: 50px;
+
+
+}
+
+.post3 h2 {
+    margin: 20px;
+    
+}
+
+.post3,
+a {
+
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+
+}
+
+.post3 a {
+    color: blue;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
 .footer {
    clear: both; 
    background-color: blueviolet;
@@ -138,3 +167,4 @@ a {
      text-align: center;
      
 }
+
