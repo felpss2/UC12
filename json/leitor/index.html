@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leitor json</title>
+</head>
+<body>
+
+    <script type="text/javascript">
+        var dados = JSON.parse('[{"nome":"Felype","sobrenome":"Echer"},{"nome":"Esdras","sobrenome":"Echer"}]'); 
+
+        dados.forEach(function (nomes){
+          document.body.innerHTML += "<p>" +nomes.nome+" "+nomes.sobrenome+"</p>";
+        });
+    </script>
+    
+</body>
+</html>
+
