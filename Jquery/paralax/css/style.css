@@ -1,0 +1,25 @@
+body,
+html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+}
+
+
+.parallax-window {
+    min-height: 400px;
+    background: transparent;
+}
+
+.container {
+    height: 600px;
+    text-align: center;
+    padding: 50px;
+}
+
+
+
+.container{
+    background-color: rgb(224, 230, 212);
+}
