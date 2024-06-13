@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Exemplo de aplicação de angular</h1>
+
+   <div ng-app=""ng-init="cor='lightblue'">
+        <input style="background-color: {{cor}}" ng-model="cor" value="{{cor}}">
+        <p>Cor digitada é: {{cor}}</p>
+        <span ng-init="quantidade=2; valor=5">
+        <p>Expressão numerica: <span style="background-color: {{cor}}">{{quantidade*valor}}</span></p>
+        </span>
+        
+    <span ng-init="nome='fulano';sobrenome='de tal'">
+        <p>Nome completo : {{nome + " " + sobrenome}}</p>
+        </span>
+
+       
+        
+   </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular.min.js"></script>
+    
+    
+</body>
+</html>
