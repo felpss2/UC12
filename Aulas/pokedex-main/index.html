@@ -1,53 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- Favicon do site -->
-  <link rel="icon" href="./favicons/favicon-16x16.png">
-  <!-- Estilos CSS -->
-  <link rel="stylesheet" href="./css/style.css">
-  <!-- Script JavaScript -->
-  <script defer src="./js/script.js"></script>
-  <title>Pokédex</title>
+  <title>Meu Portfólio</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+  <header>
+    <h1>Seu Nome</h1>
+    <nav>
+      <button class="tab-button active" data-tab="sobre">Sobre</button>
+      <button class="tab-button" data-tab="projetos">Projetos</button>
+    </nav>
+  </header>
+
   <main>
-    <!-- Imagem do Pokémon -->
-    <img src="#" alt="pokemon" class="pokemon__image">
+    <section id="sobre" class="tab-content active">
+      <h2>Sobre Mim</h2>
+      <p>Escreva aqui informações sobre você, suas habilidades, experiências, etc.</p>
+      <p>Adicione uma foto sua ou outros elementos visuais.</p>
+    </section>
 
-    <!-- Dados do Pokémon -->
-    <h1 class="pokemon__data">
-      <span class="pokemon__number"></span> - <!-- Número do Pokémon -->
-      <span class="pokemon__name"></span> <!-- Nome do Pokémon -->
-    </h1>
-
-    <!-- Formulário de busca -->
-    <form class="form">
-      <input type="search" class="input__search" placeholder="Name or Number" required />
-    </form>
-
-    <!-- Botões de navegação -->
-    <div class="buttons">
-      <button class="button btn-prev">Prev &lt;</button>
-      <button class="button btn-next">Next &gt;</button>
-    </div>
-
-    <!-- Imagem da Pokédex -->
-    <img src="./images/pokedex.png" alt="pokedex" class="pokedex">
+    <section id="projetos" class="tab-content">
+      <h2>Meus Projetos</h2>
+      <div class="projetos-container">
+        <iframe src="projeto1.html" frameborder="0"></iframe>
+        <iframe src="projeto2.html" frameborder="0"></iframe>
+        </div>
+    </section>
   </main>
 
-  <!-- Informações adicionais do Pokémon -->
-  <div class="info">
-    <h2>Informações do Pokémon</h2>
-    <p><strong>Peso:</strong> <span class="pokemon__weight"></span></p>
-    <p><strong>Tipo:</strong> <span class="pokemon__type"></span></p>
-    <p><strong>Ataques:</strong> <span class="pokemon__moves"></span></p>
-  </div>
+  <footer>
+    <p>&copy; 2023 Seu Nome</p>
+  </footer>
 
-  <!-- Música de fundo -->
-  <audio autoplay>
-    <source src="./audio/Chill & Relaxing Pokémon Music Mix.mp4" type="audio/mpeg">
-  </audio>
+  <script src="script.js"></script>
+
 </body>
 </html>

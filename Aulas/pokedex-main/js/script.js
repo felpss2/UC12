@@ -2,6 +2,8 @@
 const pokemonName = document.querySelector('.pokemon__name');
 const pokemonNumber = document.querySelector('.pokemon__number');
 const pokemonImage = document.querySelector('.pokemon__image');
+const pokemonSound = document.querySelector('.pokemon_sound');
+const backgroundAudio = document.querySelector('.background_audio');
 
 // Seleciona elementos para exibir informações adicionais do Pokémon
 const pokemonWeight = document.querySelector('.pokemon__weight');
@@ -46,6 +48,15 @@ const renderPokemon = async (pokemon) => {
     pokemonImage.src = data['sprites']['versions']['generation-v']['black-white']['animated']['front_default'];
     input.value = '';
     searchPokemon = data.id;
+
+    // Verifique se existe um som para o Pokémon
+    if (data['cries'] && data['cries']['latest']) {
+      pokemonSound.src = data['cries']['latest'];
+      pokemonSound.volume = 0.5;
+      pokemonSound.play().catch(error => {
+        console.error('Erro ao reproduzir o som:', error);
+      });
+    }
 
     // Atualiza as informações adicionais do Pokémon
     pokemonWeight.innerHTML = data.weight / 10 + ' kg';  // Peso em kg
