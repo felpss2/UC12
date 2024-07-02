@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Alunos por Curso</title>
+</head>
+<body>
+    <h1>Alunos Matriculados em Cada Curso</h1>
+    <div id="cursos"></div>
+
+    <script>
+        async function fetchCursos() {
+            try {
+                const response = await fetch('cursos.json');
+                const data = await response.json();
+                const cursosDiv = document.getElementById('cursos');
+
+                for (const [curso, alunos] of Object.entries(data)) {
+                    const cursoDiv = document.createElement('div');
+                    const cursoTitle = document.createElement('h2');
+                    cursoTitle.textContent = `Curso: ${curso}`;
+                    cursoDiv.appendChild(cursoTitle);
+
+                    alunos.forEach(aluno => {
+                        const alunoDiv = document.createElement('div');
+                        alunoDiv.textContent = ` - ${aluno}`;
+                        cursoDiv.appendChild(alunoDiv);
+                    });
+
+                    cursosDiv.appendChild(cursoDiv);
+                }
+            } catch (error) {
+                console.error('Erro ao buscar cursos:', error);
+            }
+        }
+
+        fetchCursos();
+    </script>
+</body>
+</html>

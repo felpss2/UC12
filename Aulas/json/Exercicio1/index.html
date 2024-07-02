@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Usuários Cadastrados</title>
+</head>
+<body>
+    <h1>Usuários Cadastrados</h1>
+    <div id="usuarios"></div>
+
+    <script>
+        async function fetchUsuarios() {
+            try {
+                const response = await fetch('usuarios.json');
+                const data = await response.json();
+                const usuariosDiv = document.getElementById('usuarios');
+
+                data.usuarios.forEach(usuario => {
+                    const usuarioDiv = document.createElement('div');
+                    usuarioDiv.textContent = `Nome: ${usuario.nome}, Idade: ${usuario.idade}, CPF: ${usuario.cpf}, Telefone: ${usuario.telefone}`;
+                    usuariosDiv.appendChild(usuarioDiv);
+                });
+            } catch (error) {
+                console.error('Erro ao buscar usuários:', error);
+            }
+        }
+
+        fetchUsuarios();
+    </script>
+</body>
+</html>
