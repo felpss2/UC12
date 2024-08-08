@@ -5,10 +5,14 @@ async function main()  {
     let cliente: Prisma.clienteCreateInput;
   
     // Check if posts should be included in the query
-     cliente = {
-        id_cliente: 5,
-        nome: "Cleberson",     
-        cnh: 111311113,
+      cliente = {
+        
+        nome: 'renato',
+        cpf: '33333333333',
+        horarioEntrada: new Date('2024-07-11T00:00:00.000Z'), 
+        horarioSaida: new Date('2024-07-11T00:00:00.000Z')
+       
+
       }
     // Pass 'user' object into query
     const createCliente = await prisma.cliente.create({ data: cliente })
