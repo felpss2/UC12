@@ -44,7 +44,7 @@ function main() {
         return __generator(this, function (_a) {
             switch (_a.label) {
                 case 0:
-                    criterion = { where: { id: 1 } };
+                    criterion = { where: { id: 5 } };
                     return [4 /*yield*/, prisma.cliente.findMany(criterion)];
                 case 1:
                     users = _a.sent();

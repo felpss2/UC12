@@ -46,7 +46,7 @@ function main() {
                 case 0:
                     // Check if posts should be included in the query
                     cliente = {
-                        nome: 'renato',
+                        nome: 'renato cariri',
                         cpf: '33333333333',
                         horarioEntrada: new Date('2024-07-11T00:00:00.000Z'),
                         horarioSaida: new Date('2024-07-11T00:00:00.000Z')

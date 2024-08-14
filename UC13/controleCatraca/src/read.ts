@@ -6,7 +6,7 @@ const prisma = new PrismaClient()
 async function main() {
   // Check if posts should be included in the query
   // lt: menor que, lte: menor e igual, gt: maior que, gte maior e igual
-  const criterion = {where:{id: 1}} 
+  const criterion = {where:{id: 5}} 
   const users = await prisma.cliente.findMany(criterion);
   console.table(users);
 }
