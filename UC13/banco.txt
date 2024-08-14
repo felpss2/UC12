@@ -1,0 +1,21 @@
+
+CREATE DATABASE catraco;
+
+CREATE TABLE cliente (
+id INT AUTO_INCREMENT PRIMARY KEY,
+nome VARCHAR(50),
+cpf VARCHAR(11),
+horarioEntrada TIME,
+horarioSaida TIME
+);
+
+INSERT INTO cliente (nome, cpf, horarioEntrada, horarioSaida) 
+VALUES ('Luiz', '04612376013', '20:00:00', '00:00:00');
+
+UPDATE cliente 
+SET horarioSaida = '22:30:00' 
+WHERE id = 1;
+
+select * from cliente;
+
+
